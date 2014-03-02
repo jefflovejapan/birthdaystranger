@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BFEA5B32A7242DEA9A1C8D1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F110FCBFAA42D6810E99A5 /* libPods.a */; };
 		DF616ED818C262640071312A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF616ED718C262640071312A /* Foundation.framework */; };
 		DF616EDA18C262640071312A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF616ED918C262640071312A /* CoreGraphics.framework */; };
 		DF616EDC18C262640071312A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF616EDB18C262640071312A /* UIKit.framework */; };
@@ -21,7 +22,9 @@
 		DF616EFB18C262640071312A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF616ED718C262640071312A /* Foundation.framework */; };
 		DF616EFC18C262640071312A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF616EDB18C262640071312A /* UIKit.framework */; };
 		DF616F0418C262640071312A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF616F0218C262640071312A /* InfoPlist.strings */; };
-		DF616F0618C262640071312A /* Happy_Birthday_Dear_StrangerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF616F0518C262640071312A /* Happy_Birthday_Dear_StrangerTests.m */; };
+		DF616F1018C269AA0071312A /* HBViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DF616F0F18C269AA0071312A /* HBViewControllerSpec.m */; };
+		DF616F1318C270BD0071312A /* HBBdayInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF616F1218C270BD0071312A /* HBBdayInputController.m */; };
+		DF616F1718C283450071312A /* HBBdayInputControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DF616F1618C283450071312A /* HBBdayInputControllerSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		98F110FCBFAA42D6810E99A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF616ED418C262640071312A /* Happy Birthday Dear Stranger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Happy Birthday Dear Stranger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF616ED718C262640071312A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF616ED918C262640071312A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,7 +58,12 @@
 		DF616EF918C262640071312A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DF616F0118C262640071312A /* Happy Birthday Dear StrangerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Happy Birthday Dear StrangerTests-Info.plist"; sourceTree = "<group>"; };
 		DF616F0318C262640071312A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DF616F0518C262640071312A /* Happy_Birthday_Dear_StrangerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Happy_Birthday_Dear_StrangerTests.m; sourceTree = "<group>"; };
+		DF616F0F18C269AA0071312A /* HBViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBViewControllerSpec.m; sourceTree = "<group>"; };
+		DF616F1118C270BD0071312A /* HBBdayInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBBdayInputController.h; sourceTree = "<group>"; };
+		DF616F1218C270BD0071312A /* HBBdayInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBBdayInputController.m; sourceTree = "<group>"; };
+		DF616F1418C273410071312A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		DF616F1618C283450071312A /* HBBdayInputControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBBdayInputControllerSpec.m; sourceTree = "<group>"; };
+		ECE0F59F560340448CA7611A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,7 @@
 				DF616EDA18C262640071312A /* CoreGraphics.framework in Frameworks */,
 				DF616EDC18C262640071312A /* UIKit.framework in Frameworks */,
 				DF616ED818C262640071312A /* Foundation.framework in Frameworks */,
+				1BFEA5B32A7242DEA9A1C8D1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +98,7 @@
 				DF616EFF18C262640071312A /* Happy Birthday Dear StrangerTests */,
 				DF616ED618C262640071312A /* Frameworks */,
 				DF616ED518C262640071312A /* Products */,
+				ECE0F59F560340448CA7611A /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +118,7 @@
 				DF616ED918C262640071312A /* CoreGraphics.framework */,
 				DF616EDB18C262640071312A /* UIKit.framework */,
 				DF616EF918C262640071312A /* XCTest.framework */,
+				98F110FCBFAA42D6810E99A5 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,12 +126,15 @@
 		DF616EDD18C262640071312A /* Happy Birthday Dear Stranger */ = {
 			isa = PBXGroup;
 			children = (
+				DF616EE918C262640071312A /* Main_iPhone.storyboard */,
 				DF616EE618C262640071312A /* HBAppDelegate.h */,
 				DF616EE718C262640071312A /* HBAppDelegate.m */,
-				DF616EE918C262640071312A /* Main_iPhone.storyboard */,
+				DF616F1118C270BD0071312A /* HBBdayInputController.h */,
+				DF616F1218C270BD0071312A /* HBBdayInputController.m */,
 				DF616EEC18C262640071312A /* Main_iPad.storyboard */,
 				DF616EEF18C262640071312A /* HBViewController.h */,
 				DF616EF018C262640071312A /* HBViewController.m */,
+				DF616F1418C273410071312A /* Constants.h */,
 				DF616EF218C262640071312A /* Images.xcassets */,
 				DF616EDE18C262640071312A /* Supporting Files */,
 			);
@@ -140,8 +155,9 @@
 		DF616EFF18C262640071312A /* Happy Birthday Dear StrangerTests */ = {
 			isa = PBXGroup;
 			children = (
-				DF616F0518C262640071312A /* Happy_Birthday_Dear_StrangerTests.m */,
 				DF616F0018C262640071312A /* Supporting Files */,
+				DF616F0F18C269AA0071312A /* HBViewControllerSpec.m */,
+				DF616F1618C283450071312A /* HBBdayInputControllerSpec.m */,
 			);
 			path = "Happy Birthday Dear StrangerTests";
 			sourceTree = "<group>";
@@ -162,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF616F0918C262640071312A /* Build configuration list for PBXNativeTarget "Happy Birthday Dear Stranger" */;
 			buildPhases = (
+				F2EA308ADCD544879493A09D /* Check Pods Manifest.lock */,
 				DF616ED018C262640071312A /* Sources */,
 				DF616ED118C262640071312A /* Frameworks */,
 				DF616ED218C262640071312A /* Resources */,
+				396FFFC0B2574712895818B1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,11 +267,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		396FFFC0B2574712895818B1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2EA308ADCD544879493A09D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DF616ED018C262640071312A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF616F1318C270BD0071312A /* HBBdayInputController.m in Sources */,
 				DF616EF118C262640071312A /* HBViewController.m in Sources */,
 				DF616EE818C262640071312A /* HBAppDelegate.m in Sources */,
 				DF616EE418C262640071312A /* main.m in Sources */,
@@ -264,7 +316,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF616F0618C262640071312A /* Happy_Birthday_Dear_StrangerTests.m in Sources */,
+				DF616F1018C269AA0071312A /* HBViewControllerSpec.m in Sources */,
+				DF616F1718C283450071312A /* HBBdayInputControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +443,7 @@
 		};
 		DF616F0A18C262640071312A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECE0F59F560340448CA7611A /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -403,6 +457,7 @@
 		};
 		DF616F0B18C262640071312A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECE0F59F560340448CA7611A /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -416,6 +471,7 @@
 		};
 		DF616F0D18C262640071312A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECE0F59F560340448CA7611A /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Happy Birthday Dear Stranger.app/Happy Birthday Dear Stranger";
@@ -439,6 +495,7 @@
 		};
 		DF616F0E18C262640071312A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECE0F59F560340448CA7611A /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Happy Birthday Dear Stranger.app/Happy Birthday Dear Stranger";
@@ -475,6 +532,7 @@
 				DF616F0B18C262640071312A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DF616F0C18C262640071312A /* Build configuration list for PBXNativeTarget "Happy Birthday Dear StrangerTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +541,7 @@
 				DF616F0E18C262640071312A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

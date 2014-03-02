@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
-@interface HBViewController : UIViewController
+@interface HBViewController : UIViewController <CBPeripheralManagerDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *counterOutlet;
+
+
+-(BOOL)isBirthday;
+-(void)startBroadcasting;
+-(CBPeripheralManager *)getPeripheralManager;
 
 @end

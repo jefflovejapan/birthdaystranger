@@ -7,6 +7,11 @@
 //
 
 #import "HBAppDelegate.h"
+#import "Constants.h"
+
+@interface HBAppDelegate ()
+@property (strong, nonatomic) NSUUID *privateBdayUUID;
+@end
 
 @implementation HBAppDelegate
 
@@ -42,5 +47,22 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
++ (NSUUID *)birthdayUUID {
+    static NSUUID *_birthdayUUID = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _birthdayUUID = [[NSUUID alloc]initWithUUIDString:UUID];
+    });
+    return _birthdayUUID;
+}
+
++(NSString *)birthdayID {
+    return BIRTHDAY_ID;
+}
+
+
+
+
 
 @end
